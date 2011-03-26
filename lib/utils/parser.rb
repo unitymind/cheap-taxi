@@ -40,19 +40,26 @@ module CheapTaxi
         company = {}
         begin
           raise NameError if @cache.get(url, 'companies/moscow') =~ /По Вашему запросу ничего не найдено/
+
           doc = Nokogiri::HTML(@cache.get(url, 'companies/moscow'))
           company[:name] = doc.search(".//title")[0].content.split('|')[0].strip
-          puts company[:name] if url == 'http://www.taxodrom.ru/taxi-moscow/35'
+
           if company[:phones] = doc.search(".//label").find { |l| l.content == 'Телефон' }
             company[:phones] = company[:phones].parent.search(".//strong").map { |s| s.content.strip }.join("\n")
           end
+
           if company[:url] = doc.search(".//label").find { |l| l.content == 'Сайт службы такси' }
             company[:url] = company[:url].next.next.search(".//a")[0].attributes['href'].value
           end
-          company[:car_types] = []
-          company[:car_types].push("e") if doc.search(".//label/a[@href='/taxi-econom']")[0].parent.next.next.search(".//li[@class='square']").size > 0
-          company[:car_types].push("b") if doc.search(".//label/a[@href='/taxi-business']")[0].parent.next.next.search(".//li[@class='square']").size > 0
-          company[:car_types].push("v") if doc.search(".//label/a[@href='/taxi-vip']")[0].parent.next.next.search(".//li[@class='square']").size > 0
+
+          company[:car_types] = {}
+          {:e_class => 'taxi-econom', :b_class => 'taxi-business', :v_class => 'taxi-vip'}.each do |type, postfix|
+            doc.search(".//label/a[@href='/#{postfix}']")[0].parent.next.next. \
+              search(".//li[@class='square']").each do |car|
+                company[:car_types][type] = [] if company[:car_types][type].nil?
+                company[:car_types][type].push(car.content.strip) unless company[:car_types][type].include? car.content.strip
+            end
+          end
         rescue OpenURI::HTTPError, NameError
         rescue Exception => e
           raise e

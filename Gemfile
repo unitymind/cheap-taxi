@@ -31,6 +31,7 @@ group :development, :test do
   gem 'thin'
   gem 'yaml_db'
   gem 'railroady'
+  gem 'colored'
   gem 'rspec-rails-matchers', :git => 'git://github.com/unitymind/rspec-rails-matchers.git'
 #  gem 'rspec-rails-matchers', :path => '~/developing/projects/gems/rspec-rails-matchers'
 #  gem 'metric_fu'

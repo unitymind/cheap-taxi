@@ -50,17 +50,17 @@ describe CheapTaxi::Utils::Parser do
     end
 
     it ":car_types should be expected" do
-      company_a[:car_types].sort.should == ['e', 'b'].sort
-      company_b[:car_types].sort.should == ['b', 'v'].sort
-      company_c[:car_types].sort.should == ['e', 'b', 'v'].sort
-      company_d[:car_types].should == []
+      company_a[:car_types].keys.sort.should == [:e_class, :b_class].sort
+      company_b[:car_types].keys.sort.should == [:b_class, :v_class].sort
+      company_c[:car_types].keys.sort.should == [:e_class, :b_class, :v_class].sort
+      company_d[:car_types].should == {}
     end
 
     it "should be empty if got 404 page" do
       company_not_found.should == {}
     end
 
-    it "should be raise ArgumentError for not taxodrom.ru company's profile url" do
+    it "should be raise ArgumentError for non taxodrom.ru company's profile url" do
       expect { company_not_profile }.to raise_error(ArgumentError)
       expect { company_not_taxodrom }.to raise_error(ArgumentError)
     end

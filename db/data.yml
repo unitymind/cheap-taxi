@@ -1,857 +1,5 @@
 
 ---
-regions:
-  columns:
-  - id
-  - name
-  - area
-  - population
-  - sha1_hash
-  - url
-  - district_id
-  records: 
-  - - 1
-    - Арбат
-    - 276
-    - 20
-    - bb26ce6b761a9d2ad30937013e519c8df44398b8
-    - http://mosopen.ru/region/arbat
-    - 1
-  - - 2
-    - Басманный
-    - 816
-    - 101
-    - 98c422725e6368393aee4ab71ceeb338680ac4f8
-    - http://mosopen.ru/region/basmannyj
-    - 1
-  - - 3
-    - Замоскворечье
-    - 438
-    - 51
-    - 0064180b302057a80383c6b7c9e69ca840999250
-    - http://mosopen.ru/region/zamoskvoreche
-    - 1
-  - - 4
-    - Красносельский
-    - 429
-    - 45
-    - 67cb468f0df615ee87a064f974156c81a45cbae2
-    - http://mosopen.ru/region/krasnoselskij
-    - 1
-  - - 5
-    - Мещанский
-    - 398
-    - 56
-    - 8c49c387ade243dd85ccb02f7300fe3e403b9115
-    - http://mosopen.ru/region/meshchanskij
-    - 1
-  - - 6
-    - Пресненский
-    - 890
-    - 116
-    - 0fde326cbbbd0ba6075d7a5edeadf9386dd52040
-    - http://mosopen.ru/region/presnenskij
-    - 1
-  - - 7
-    - Таганский
-    - 791
-    - 110
-    - 07497f0d0c8204cff4637741aa5443dc5ba294d1
-    - http://mosopen.ru/region/taganskij
-    - 1
-  - - 8
-    - Тверской
-    - 565
-    - 76
-    - 44cdefefa61f8b9e0dd6d9414d8fd2d1733f8432
-    - http://mosopen.ru/region/tverskoj
-    - 1
-  - - 9
-    - Хамовники
-    - 950
-    - 97
-    - e2f3dc5d0c753b08c51ba3e2fce9a611a4a5408f
-    - http://mosopen.ru/region/hamovniki
-    - 1
-  - - 10
-    - Якиманка
-    - 375
-    - 23
-    - 5ec619284d9b5081b8c601e188a4f90539bcdfab
-    - http://mosopen.ru/region/yakimanka
-    - 1
-  - - 11
-    - Аэропорт
-    - 322
-    - 75
-    - 8f260e25fb11c7efa00a37a3ce92b8e65beb5410
-    - http://mosopen.ru/region/aeroport
-    - 2
-  - - 12
-    - Беговой
-    - 418
-    - 38
-    - 6d2b5f23f3f947d6450a70d357b6983c055e9216
-    - http://mosopen.ru/region/begovoj
-    - 2
-  - - 13
-    - Бескудниковский
-    - 327
-    - 64
-    - 275ea976be02194426e2166043b57ba46398ce7f
-    - http://mosopen.ru/region/beskudnikovskij
-    - 2
-  - - 14
-    - Войковский
-    - 660
-    - 67
-    - ce76f80431d630b5fb78ce4272e317644d3eabb0
-    - http://mosopen.ru/region/vojkovskij
-    - 2
-  - - 15
-    - Головинский
-    - 880
-    - 83
-    - 8b928a03fb91432241d6f4e619a427af47f200f7
-    - http://mosopen.ru/region/golovinskij
-    - 2
-  - - 16
-    - Дегунино Восточное
-    - 377
-    - 97
-    - c33dbde8eea2f59e8d02bed3824f8df934793153
-    - http://mosopen.ru/region/degunino_vostochnoe
-    - 2
-  - - 17
-    - Дегунино Западное
-    - 734
-    - 61
-    - 4af12b696e2f292ac45e081f2100e1a120644108
-    - http://mosopen.ru/region/degunino_zapadnoe
-    - 2
-  - - 18
-    - Дмитровский
-    - 683
-    - 89
-    - 3ad61dbc14cd93d84bc98684eb434084ac41882a
-    - http://mosopen.ru/region/dmitrovskij
-    - 2
-  - - 19
-    - Коптево
-    - 508
-    - 85
-    - 1d06a4c46533e1908cb4137156786af50656f7c6
-    - http://mosopen.ru/region/koptevo
-    - 2
-  - - 20
-    - Левобережный
-    - 800
-    - 51
-    - 4d2b59a7220df3eb6994abd21eb2663059182c16
-    - http://mosopen.ru/region/levoberezhnyj
-    - 2
-  - - 21
-    - Молжаниновский
-    - 2625
-    - 2
-    - f85f53c344e69e4ee0c0c6caa0ec9d98069bc59e
-    - http://mosopen.ru/region/molzhaninovskij
-    - 2
-  - - 22
-    - Савёловский
-    - 270
-    - 57
-    - 9cd6fdc25ac1fc0f23568e280d7dbc7401451c75
-    - http://mosopen.ru/region/savelovskij
-    - 2
-  - - 23
-    - Сокол
-    - 305
-    - 57
-    - a6d705dc2b0a18e9c07a0e9750e3333ee9423a2a
-    - http://mosopen.ru/region/sokol
-    - 2
-  - - 24
-    - Тимирязевский
-    - 1592
-    - 83
-    - b7c28e4bae8839b6a02ccdcb4d466fbfd5d71ecd
-    - http://mosopen.ru/region/timiryazevskij
-    - 2
-  - - 25
-    - Ховрино
-    - 437
-    - 67
-    - 0b1a74c88b02d61e1f7884f0cd103a27b3bba11e
-    - http://mosopen.ru/region/hovrino
-    - 2
-  - - 26
-    - Хорошёвский
-    - 854
-    - 56
-    - 1b9ef9a222896bd6141dd12f7bad247e842f87af
-    - http://mosopen.ru/region/horoshevskij
-    - 2
-  - - 27
-    - Алексеевский
-    - 525
-    - 73
-    - befa81887b05525a7b5246e68e604dfba6a574c3
-    - http://mosopen.ru/region/alekseevskij
-    - 3
-  - - 28
-    - Алтуфьевский
-    - 209
-    - 50
-    - 9c5a21ff6dc668049cdd4cbfa6b78c71f8abde22
-    - http://mosopen.ru/region/altufevskij
-    - 3
-  - - 29
-    - Бабушкинский
-    - 505
-    - 77
-    - bd73a9c2ad9478c306e8170fd56a6cf7cdac9d0e
-    - http://mosopen.ru/region/babushkinskij
-    - 3
-  - - 30
-    - Бибирево
-    - 333
-    - 155
-    - 29acd06a0471aaef2fcdb393497e35c7ca289d28
-    - http://mosopen.ru/region/bibirevo
-    - 3
-  - - 31
-    - Бутырский
-    - 504
-    - 51
-    - ac37e2bf7c10ecf0406f3b5448b21bd8f3d8541a
-    - http://mosopen.ru/region/butyrskij
-    - 3
-  - - 32
-    - Лианозово
-    - 660
-    - 77
-    - 4e7681d141cc9a62a3307a86ec815da5107301de
-    - http://mosopen.ru/region/lianozovo
-    - 3
-  - - 33
-    - Лосиноостровский
-    - 554
-    - 72
-    - 97ae986448628336e25f392165dd0cce8e5fdd9e
-    - http://mosopen.ru/region/losinoostrovskij
-    - 3
-  - - 34
-    - Марфино
-    - 268
-    - 22
-    - 2296c61ac8eecfaa93112b4c8bbe99aa261a19c2
-    - http://mosopen.ru/region/marfino
-    - 3
-  - - 35
-    - Марьина роща
-    - 467
-    - 62
-    - 710aa784b877c8c6167ba5ba7ff3d08b95d4dd7c
-    - http://mosopen.ru/region/marina_roshcha
-    - 3
-  - - 36
-    - Медведково Северное
-    - 567
-    - 112
-    - f22b53ad5afe5ad7c9075cfae6aa7efba91b794b
-    - http://mosopen.ru/region/medvedkovo_severnoe
-    - 3
-  - - 37
-    - Медведково Южное
-    - 400
-    - 65
-    - e734eed1459aa847f4df3942c2688cba0e854153
-    - http://mosopen.ru/region/medvedkovo_yuzhnoe
-    - 3
-  - - 38
-    - Останкинский
-    - 1240
-    - 55
-    - d437c7ea0d99780f6110431703c4ea07cf002748
-    - http://mosopen.ru/region/ostankinskij
-    - 3
-  - - 39
-    - Отрадное
-    - 1020
-    - 170
-    - 6615846143f239bce7170082e58ad57c3e903d79
-    - http://mosopen.ru/region/otradnoe
-    - 3
-  - - 40
-    - Ростокино
-    - 440
-    - 29
-    - 6c369aa3ad7008ceb56c98ed790890d992f6781d
-    - http://mosopen.ru/region/rostokino
-    - 3
-  - - 41
-    - Свиблово
-    - 455
-    - 49
-    - 92e1e096fd8b4101c3f07d5d8497def6673224d0
-    - http://mosopen.ru/region/sviblovo
-    - 3
-  - - 42
-    - Северный
-    - 1500
-    - 16
-    - 0069f9b8fff7405158877349fa543dfe0587ef72
-    - http://mosopen.ru/region/severnyj
-    - 3
-  - - 43
-    - Ярославский
-    - 840
-    - 85
-    - bd55a4efc07ddd046e89265608ee8642ea4ea2d2
-    - http://mosopen.ru/region/yaroslavskij
-    - 3
-  - - 44
-    - Богородское
-    - 1105
-    - 76
-    - 9a2c36d6ce8ebb588c9fa11bc89c3993876b45f7
-    - http://mosopen.ru/region/bogorodskoe
-    - 4
-  - - 45
-    - Вешняки
-    - 1072
-    - 102
-    - df34e9302695aff103b1000b1178df74554a83d8
-    - http://mosopen.ru/region/veshnyaki
-    - 4
-  - - 46
-    - Восточный
-    - 4000
-    - 12
-    - 8cc0443ba97dd9cac43e48e5f4dc5b155ccb9441
-    - http://mosopen.ru/region/vostochnyj
-    - 4
-  - - 47
-    - Гольяново
-    - 1178
-    - 159
-    - 0b88af30bcf746ba81f5ea29042ab9a3fdf9f64a
-    - http://mosopen.ru/region/golyanovo
-    - 4
-  - - 48
-    - Ивановское
-    - 1150
-    - 128
-    - 9f5d83011b69bb30c99b094f4f39f5774853d260
-    - http://mosopen.ru/region/ivanovskoe
-    - 4
-  - - 49
-    - Измайлово Восточное
-    - 309
-    - 55
-    - 5c078de5f0beef53966b9fd1bab627c654f75dea
-    - http://mosopen.ru/region/izmajlovo_vostochnoe
-    - 4
-  - - 50
-    - Измайлово
-    - 2425
-    - 108
-    - 9991e3368aa6a3a7087ba38063c0a219cd0f36c6
-    - http://mosopen.ru/region/izmajlovo
-    - 4
-  - - 51
-    - Измайлово Северное
-    - 400
-    - 69
-    - 6d97e32a0c9928563dbb6faff22196eb74bb3ef9
-    - http://mosopen.ru/region/izmajlovo_severnoe
-    - 4
-  - - 52
-    - Косино-Ухтомский
-    - 3020
-    - 33
-    - 89286eab79148b37982d293d4805ffb79cbafaa2
-    - http://mosopen.ru/region/kosino-uhtomskij
-    - 4
-  - - 53
-    - Метрогородок
-    - 540
-    - 33
-    - 589ac2655aeb7e7098092cdf0d7a80f634eb4601
-    - http://mosopen.ru/region/metrogorodok
-    - 4
-  - - 54
-    - Новогиреево
-    - 430
-    - 77
-    - 2f42d432c7ef8eb825492161391123ba19715744
-    - http://mosopen.ru/region/novogireevo
-    - 4
-  - - 55
-    - Новокосино
-    - 340
-    - 76
-    - 978b822fb64db2d400c17b01c32162bc3331d5fe
-    - http://mosopen.ru/region/novokosino
-    - 4
-  - - 56
-    - Перово
-    - 971
-    - 135
-    - 456b058609c2611bf38e564bc3edce0a9aed3aaf
-    - http://mosopen.ru/region/perovo
-    - 4
-  - - 57
-    - Преображенское
-    - 561
-    - 80
-    - fd89230b8775752d0f370ee16589e15ca85b7ce7
-    - http://mosopen.ru/region/preobrazhenskoe
-    - 4
-  - - 58
-    - Соколиная гора
-    - 796
-    - 85
-    - ee13f533874b82fb16dbd9d434ecfc1df7812bc4
-    - http://mosopen.ru/region/sokolinaya_gora
-    - 4
-  - - 59
-    - Сокольники
-    - 1006
-    - 55
-    - 2ad5485d7cc084d8e758d2e71282c59c7ec5fe0a
-    - http://mosopen.ru/region/sokolniki
-    - 4
-  - - 60
-    - Выхино-Жулебино
-    - 1259
-    - 186
-    - 17bdad536e022418092f83a04f5ec568eeb6dfdd
-    - http://mosopen.ru/region/vyhino-zhulebino
-    - 5
-  - - 61
-    - Капотня
-    - 950
-    - 28
-    - 033997b49ff9c8ad4529c8a39be8e786b983b590
-    - http://mosopen.ru/region/kapotnya
-    - 5
-  - - 62
-    - Кузьминки
-    - 760
-    - 123
-    - 2f718bb6decc33052576cd577e5bbb2990767d0b
-    - http://mosopen.ru/region/kuzminki
-    - 5
-  - - 63
-    - Лефортово
-    - 915
-    - 87
-    - 07ce3f4328925ce41a0b32e5ba76e2f060acde92
-    - http://mosopen.ru/region/lefortovo
-    - 5
-  - - 64
-    - Люблино
-    - 1782
-    - 149
-    - 67b8b21ff8ac5961bb03973ac93cbbba826dfc29
-    - http://mosopen.ru/region/lyublino
-    - 5
-  - - 65
-    - Марьино
-    - 1274
-    - 221
-    - e079fd4867d473563b4a5d1cc2590799cf53cd94
-    - http://mosopen.ru/region/marino
-    - 5
-  - - 66
-    - Некрасовка
-    - 495
-    - 8
-    - d34cf975cb9760693f301f02ee159cf7337de2b6
-    - http://mosopen.ru/region/nekrasovka
-    - 5
-  - - 67
-    - Нижегородский
-    - 753
-    - 31
-    - 45f84bd1deae57d08610fb5bc1f87ea489d9aa2a
-    - http://mosopen.ru/region/nizhegorodskij
-    - 5
-  - - 68
-    - Печатники
-    - 2007
-    - 70
-    - ed47a73b0ef56bae3015eca864b9490a4c443340
-    - http://mosopen.ru/region/pechatniki
-    - 5
-  - - 69
-    - Рязанский
-    - 643
-    - 68
-    - e4ee127b7c0e128424bf9a1e439169862a05fcca
-    - http://mosopen.ru/region/ryazanskij
-    - 5
-  - - 70
-    - Текстильщики
-    - 600
-    - 87
-    - 488c7177f2db0e0925e7e0fb4ec3d44290770c1a
-    - http://mosopen.ru/region/tekstilshchiki
-    - 5
-  - - 71
-    - Южнопортовый
-    - 450
-    - 50
-    - e6d7789826d7cc252de3b61548f459ff9473c8b0
-    - http://mosopen.ru/region/yuzhnoportovyj
-    - 5
-  - - 72
-    - Бирюлёво Восточное
-    - 1477
-    - 132
-    - d744e0dc2f1ee51c0ed8e19ebb48ce88f54ee281
-    - http://mosopen.ru/region/biryulevo_vostochnoe
-    - 6
-  - - 73
-    - Бирюлёво Западное
-    - 631
-    - 64
-    - fe611cc46262d3c96776bf773a7e0602115fab74
-    - http://mosopen.ru/region/biryulevo_zapadnoe
-    - 6
-  - - 74
-    - Братеево
-    - 700
-    - 72
-    - ea0eb52949c8ba111585ee94d301dc7fa6f08460
-    - http://mosopen.ru/region/brateevo
-    - 6
-  - - 75
-    - Даниловский
-    - 1065
-    - 80
-    - 048255b9d0fdbd73790a9a523d07ff52ff9ed2f5
-    - http://mosopen.ru/region/danilovskij
-    - 6
-  - - 76
-    - Донской
-    - 590
-    - 45
-    - 207503beb15c149b5209058ee0bc7f255a063e4c
-    - http://mosopen.ru/region/donskoj
-    - 6
-  - - 77
-    - Зябликово
-    - 1888
-    - 103
-    - 9f7359e73da47840309f446507a745ebf54fd897
-    - http://mosopen.ru/region/zyablikovo
-    - 6
-  - - 78
-    - Москворечье-Сабурово
-    - 925
-    - 54
-    - a10adf1acbb1ea6d194e5af5f647522d94e013d1
-    - http://mosopen.ru/region/moskvoreche-saburovo
-    - 6
-  - - 79
-    - Нагатино-Садовники
-    - 830
-    - 69
-    - 9efac765d4090fa501098400901a021a53c1a6e3
-    - http://mosopen.ru/region/nagatino-sadovniki
-    - 6
-  - - 80
-    - Нагатинский затон
-    - 945
-    - 106
-    - de3e4a2482aae112a89309814cf989ee579ea9ab
-    - http://mosopen.ru/region/nagatinskij_zaton
-    - 6
-  - - 81
-    - Нагорный
-    - 539
-    - 56
-    - 43ededd911ee2c08cf3e4b138e9eb1967ed9830b
-    - http://mosopen.ru/region/nagornyj
-    - 6
-  - - 82
-    - Орехово-Борисово Северное
-    - 360
-    - 100
-    - 1d125cd67125a08f50dca4c5b0ade2f03409bf9d
-    - http://mosopen.ru/region/orehovo-borisovo_severnoe
-    - 6
-  - - 83
-    - Орехово-Борисово Южное
-    - 510
-    - 137
-    - 89c82a48d88e958b0b2f1c7283d043ada6b296c3
-    - http://mosopen.ru/region/orehovo-borisovo_yuzhnoe
-    - 6
-  - - 84
-    - Царицыно
-    - 831
-    - 115
-    - 82a1f597a7ad96fe908ed4b1f49cb23aa54b6d9e
-    - http://mosopen.ru/region/caricyno
-    - 6
-  - - 85
-    - Чертаново Северное
-    - 445
-    - 82
-    - e782ee6ae117428d3ff4f3bc80a37b8e8395c2ad
-    - http://mosopen.ru/region/chertanovo_severnoe
-    - 6
-  - - 86
-    - Чертаново Центральное
-    - 650
-    - 85
-    - 4a7f719f06af471dec584d33b21dc5960c5319c4
-    - http://mosopen.ru/region/chertanovo_centralnoe
-    - 6
-  - - 87
-    - Чертаново Южное
-    - 812
-    - 114
-    - 5699127f96b77e2d6fece2754cb8945d04a3a19e
-    - http://mosopen.ru/region/chertanovo_yuzhnoe
-    - 6
-  - - 88
-    - Академический
-    - 557
-    - 82
-    - ad6a0fcf82605bdf16d548a64f978f05fe4599cb
-    - http://mosopen.ru/region/akademicheskij
-    - 7
-  - - 89
-    - Бутово Северное
-    - 927
-    - 62
-    - 6a117ee152a57541cb3176b2934e0cfd90982628
-    - http://mosopen.ru/region/butovo_severnoe
-    - 7
-  - - 90
-    - Бутово Южное
-    - 2600
-    - 144
-    - 0b15025076aa0559fde6f4732817816c7caeeaf6
-    - http://mosopen.ru/region/butovo_yuzhnoe
-    - 7
-  - - 91
-    - Гагаринский
-    - 549
-    - 60
-    - 432744988d7271c264025eebc42ab2f4aaf19435
-    - http://mosopen.ru/region/gagarinskij
-    - 7
-  - - 92
-    - Зюзино
-    - 534
-    - 100
-    - 861013ff9d61e5dab80d078eea9973d0cebf2b6b
-    - http://mosopen.ru/region/zyuzino
-    - 7
-  - - 93
-    - Коньково
-    - 471
-    - 126
-    - cf7abeaa9be27bc4a7984a31c3bfe0b4f5db9f00
-    - http://mosopen.ru/region/konkovo
-    - 7
-  - - 94
-    - Котловка
-    - 267
-    - 60
-    - 4264a44f4cf561e940de8fe0bd82332a5625e87f
-    - http://mosopen.ru/region/kotlovka
-    - 7
-  - - 95
-    - Ломоносовский
-    - 300
-    - 68
-    - 6411dfe0bc7ff44c23a6327714466a461dfffc65
-    - http://mosopen.ru/region/lomonosovskij
-    - 7
-  - - 96
-    - Обручевский
-    - 604
-    - 70
-    - 1e4ff7c562f2a713ab47a0d7b9b8f206847a4276
-    - http://mosopen.ru/region/obruchevskij
-    - 7
-  - - 97
-    - Тёплый Стан
-    - 750
-    - 113
-    - 78b164a2d41c333d54b2df0f547e3e064eb2fe96
-    - http://mosopen.ru/region/teplyj_stan
-    - 7
-  - - 98
-    - Черёмушки
-    - 463
-    - 89
-    - 6914ccbc85baef96d429754a613b7955d4ab6d9c
-    - http://mosopen.ru/region/cheremushki
-    - 7
-  - - 99
-    - Ясенево
-    - 2536
-    - 172
-    - 6b904711bae8eebde36d5fd8853a46276c881007
-    - http://mosopen.ru/region/yasenevo
-    - 7
-  - - 100
-    - Внуково
-    - 1691
-    - 20
-    - 89580cad1ed2279c26359daa3ab71f73bf84a251
-    - http://mosopen.ru/region/vnukovo
-    - 8
-  - - 101
-    - Дорогомилово
-    - 793
-    - 63
-    - d1d9f2fcae903fea2d9ade7632f1ddc3f4dd112e
-    - http://mosopen.ru/region/dorogomilovo
-    - 8
-  - - 102
-    - Крылатское
-    - 1110
-    - 62
-    - f7777f9cba45f9dfe69bed84ab55674af3083ff7
-    - http://mosopen.ru/region/krylatskoe
-    - 8
-  - - 103
-    - Кунцево
-    - 1610
-    - 125
-    - 24ae1c58d92a8654de3abe50111a4215d2753efa
-    - http://mosopen.ru/region/kuncevo
-    - 8
-  - - 104
-    - Можайский
-    - 1085
-    - 110
-    - 1d8316c246229e5e6eb4671e7e818ba02ee54615
-    - http://mosopen.ru/region/mozhajskij
-    - 8
-  - - 105
-    - Ново-Переделкино
-    - 855
-    - 92
-    - a93b9546793b9d056601fd7e4385b9dc0f479f71
-    - http://mosopen.ru/region/novo-peredelkino
-    - 8
-  - - 106
-    - Очаково-Матвеевское
-    - 1759
-    - 91
-    - 3e06f42588d5aeab7c3aa110f91f00150bf8f8c0
-    - http://mosopen.ru/region/ochakovo-matveevskoe
-    - 8
-  - - 107
-    - Проспект Вернадского
-    - 462
-    - 55
-    - 104e27e04ba48ed1efabbde22f9c272fa012fdd7
-    - http://mosopen.ru/region/prospekt_vernadskogo
-    - 8
-  - - 108
-    - Раменки
-    - 1876
-    - 102
-    - 0360e7bd675d149a65b479f39570d18d2f3c1802
-    - http://mosopen.ru/region/ramenki
-    - 8
-  - - 109
-    - Солнцево
-    - 1125
-    - 88
-    - de35e3e8da7c87a65268fe60842b9d6a1e842e7d
-    - http://mosopen.ru/region/solncevo
-    - 8
-  - - 110
-    - Тропарёво-Никулино
-    - 1023
-    - 98
-    - 4d7e04d6880ff6517e459862113ac2b66794d277
-    - http://mosopen.ru/region/troparevo-nikulino
-    - 8
-  - - 111
-    - Филёвский парк
-    - 784
-    - 59
-    - e3601f78a97ff65a3b098e6def0fd066a893f6f6
-    - http://mosopen.ru/region/filevskij_park
-    - 8
-  - - 112
-    - Фили-Давыдково
-    - 850
-    - 84
-    - a39de4e96459d83db14d1c7121c8194386b9b90d
-    - http://mosopen.ru/region/fili-davydkovo
-    - 8
-  - - 113
-    - Куркино
-    - 790
-    - 21
-    - 4c5ac49ea8eaa08b9f37519e7575e7692842cc85
-    - http://mosopen.ru/region/kurkino
-    - 9
-  - - 114
-    - Митино
-    - 1258
-    - 130
-    - 885b13eb6eb40434e001943fd171bbda2d809e13
-    - http://mosopen.ru/region/mitino
-    - 9
-  - - 115
-    - Покровское-Стрешнево
-    - 350
-    - 48
-    - 4e2e4f25edb8b8b0affe167aab8fe82d8d69963a
-    - http://mosopen.ru/region/pokrovskoe-streshnevo
-    - 9
-  - - 116
-    - Строгино
-    - 1670
-    - 119
-    - 877ef3b6b470855945bd576a1e349523320d3d75
-    - http://mosopen.ru/region/strogino
-    - 9
-  - - 117
-    - Тушино Северное
-    - 580
-    - 119
-    - 5bacd7f979c928aa5ee6333d3519eb5dfc6815ee
-    - http://mosopen.ru/region/tushino_severnoe
-    - 9
-  - - 118
-    - Тушино Южное
-    - 1170
-    - 79
-    - b013abd82d12e70d39255b136912ac1886baf1db
-    - http://mosopen.ru/region/tushino_yuzhnoe
-    - 9
-  - - 119
-    - Хорошёво-Мневники
-    - 1500
-    - 120
-    - fe5392e52286db760fc15ea59f241ab49cc7cc1c
-    - http://mosopen.ru/region/horoshevo-mnevniki
-    - 9
-  - - 120
-    - Щукино
-    - 900
-    - 90
-    - 33fc67fbed27dd0067d3446bf3016d2acf5c4668
-    - http://mosopen.ru/region/shchukino
-    - 9
-
----
 districts:
   columns:
   - id
@@ -4049,6 +3197,858 @@ region_links:
   - - 656
     - 84
     - 85
+
+---
+regions:
+  columns:
+  - id
+  - name
+  - area
+  - population
+  - sha1_hash
+  - url
+  - district_id
+  records: 
+  - - 1
+    - Арбат
+    - 276
+    - 20
+    - bb26ce6b761a9d2ad30937013e519c8df44398b8
+    - http://mosopen.ru/region/arbat
+    - 1
+  - - 2
+    - Басманный
+    - 816
+    - 101
+    - 98c422725e6368393aee4ab71ceeb338680ac4f8
+    - http://mosopen.ru/region/basmannyj
+    - 1
+  - - 3
+    - Замоскворечье
+    - 438
+    - 51
+    - 0064180b302057a80383c6b7c9e69ca840999250
+    - http://mosopen.ru/region/zamoskvoreche
+    - 1
+  - - 4
+    - Красносельский
+    - 429
+    - 45
+    - 67cb468f0df615ee87a064f974156c81a45cbae2
+    - http://mosopen.ru/region/krasnoselskij
+    - 1
+  - - 5
+    - Мещанский
+    - 398
+    - 56
+    - 8c49c387ade243dd85ccb02f7300fe3e403b9115
+    - http://mosopen.ru/region/meshchanskij
+    - 1
+  - - 6
+    - Пресненский
+    - 890
+    - 116
+    - 0fde326cbbbd0ba6075d7a5edeadf9386dd52040
+    - http://mosopen.ru/region/presnenskij
+    - 1
+  - - 7
+    - Таганский
+    - 791
+    - 110
+    - 07497f0d0c8204cff4637741aa5443dc5ba294d1
+    - http://mosopen.ru/region/taganskij
+    - 1
+  - - 8
+    - Тверской
+    - 565
+    - 76
+    - 44cdefefa61f8b9e0dd6d9414d8fd2d1733f8432
+    - http://mosopen.ru/region/tverskoj
+    - 1
+  - - 9
+    - Хамовники
+    - 950
+    - 97
+    - e2f3dc5d0c753b08c51ba3e2fce9a611a4a5408f
+    - http://mosopen.ru/region/hamovniki
+    - 1
+  - - 10
+    - Якиманка
+    - 375
+    - 23
+    - 5ec619284d9b5081b8c601e188a4f90539bcdfab
+    - http://mosopen.ru/region/yakimanka
+    - 1
+  - - 11
+    - Аэропорт
+    - 322
+    - 75
+    - 8f260e25fb11c7efa00a37a3ce92b8e65beb5410
+    - http://mosopen.ru/region/aeroport
+    - 2
+  - - 12
+    - Беговой
+    - 418
+    - 38
+    - 6d2b5f23f3f947d6450a70d357b6983c055e9216
+    - http://mosopen.ru/region/begovoj
+    - 2
+  - - 13
+    - Бескудниковский
+    - 327
+    - 64
+    - 275ea976be02194426e2166043b57ba46398ce7f
+    - http://mosopen.ru/region/beskudnikovskij
+    - 2
+  - - 14
+    - Войковский
+    - 660
+    - 67
+    - ce76f80431d630b5fb78ce4272e317644d3eabb0
+    - http://mosopen.ru/region/vojkovskij
+    - 2
+  - - 15
+    - Головинский
+    - 880
+    - 83
+    - 8b928a03fb91432241d6f4e619a427af47f200f7
+    - http://mosopen.ru/region/golovinskij
+    - 2
+  - - 16
+    - Дегунино Восточное
+    - 377
+    - 97
+    - c33dbde8eea2f59e8d02bed3824f8df934793153
+    - http://mosopen.ru/region/degunino_vostochnoe
+    - 2
+  - - 17
+    - Дегунино Западное
+    - 734
+    - 61
+    - 4af12b696e2f292ac45e081f2100e1a120644108
+    - http://mosopen.ru/region/degunino_zapadnoe
+    - 2
+  - - 18
+    - Дмитровский
+    - 683
+    - 89
+    - 3ad61dbc14cd93d84bc98684eb434084ac41882a
+    - http://mosopen.ru/region/dmitrovskij
+    - 2
+  - - 19
+    - Коптево
+    - 508
+    - 85
+    - 1d06a4c46533e1908cb4137156786af50656f7c6
+    - http://mosopen.ru/region/koptevo
+    - 2
+  - - 20
+    - Левобережный
+    - 800
+    - 51
+    - 4d2b59a7220df3eb6994abd21eb2663059182c16
+    - http://mosopen.ru/region/levoberezhnyj
+    - 2
+  - - 21
+    - Молжаниновский
+    - 2625
+    - 2
+    - f85f53c344e69e4ee0c0c6caa0ec9d98069bc59e
+    - http://mosopen.ru/region/molzhaninovskij
+    - 2
+  - - 22
+    - Савёловский
+    - 270
+    - 57
+    - 9cd6fdc25ac1fc0f23568e280d7dbc7401451c75
+    - http://mosopen.ru/region/savelovskij
+    - 2
+  - - 23
+    - Сокол
+    - 305
+    - 57
+    - a6d705dc2b0a18e9c07a0e9750e3333ee9423a2a
+    - http://mosopen.ru/region/sokol
+    - 2
+  - - 24
+    - Тимирязевский
+    - 1592
+    - 83
+    - b7c28e4bae8839b6a02ccdcb4d466fbfd5d71ecd
+    - http://mosopen.ru/region/timiryazevskij
+    - 2
+  - - 25
+    - Ховрино
+    - 437
+    - 67
+    - 0b1a74c88b02d61e1f7884f0cd103a27b3bba11e
+    - http://mosopen.ru/region/hovrino
+    - 2
+  - - 26
+    - Хорошёвский
+    - 854
+    - 56
+    - 1b9ef9a222896bd6141dd12f7bad247e842f87af
+    - http://mosopen.ru/region/horoshevskij
+    - 2
+  - - 27
+    - Алексеевский
+    - 525
+    - 73
+    - befa81887b05525a7b5246e68e604dfba6a574c3
+    - http://mosopen.ru/region/alekseevskij
+    - 3
+  - - 28
+    - Алтуфьевский
+    - 209
+    - 50
+    - 9c5a21ff6dc668049cdd4cbfa6b78c71f8abde22
+    - http://mosopen.ru/region/altufevskij
+    - 3
+  - - 29
+    - Бабушкинский
+    - 505
+    - 77
+    - bd73a9c2ad9478c306e8170fd56a6cf7cdac9d0e
+    - http://mosopen.ru/region/babushkinskij
+    - 3
+  - - 30
+    - Бибирево
+    - 333
+    - 155
+    - 29acd06a0471aaef2fcdb393497e35c7ca289d28
+    - http://mosopen.ru/region/bibirevo
+    - 3
+  - - 31
+    - Бутырский
+    - 504
+    - 51
+    - ac37e2bf7c10ecf0406f3b5448b21bd8f3d8541a
+    - http://mosopen.ru/region/butyrskij
+    - 3
+  - - 32
+    - Лианозово
+    - 660
+    - 77
+    - 4e7681d141cc9a62a3307a86ec815da5107301de
+    - http://mosopen.ru/region/lianozovo
+    - 3
+  - - 33
+    - Лосиноостровский
+    - 554
+    - 72
+    - 97ae986448628336e25f392165dd0cce8e5fdd9e
+    - http://mosopen.ru/region/losinoostrovskij
+    - 3
+  - - 34
+    - Марфино
+    - 268
+    - 22
+    - 2296c61ac8eecfaa93112b4c8bbe99aa261a19c2
+    - http://mosopen.ru/region/marfino
+    - 3
+  - - 35
+    - Марьина роща
+    - 467
+    - 62
+    - 710aa784b877c8c6167ba5ba7ff3d08b95d4dd7c
+    - http://mosopen.ru/region/marina_roshcha
+    - 3
+  - - 36
+    - Медведково Северное
+    - 567
+    - 112
+    - f22b53ad5afe5ad7c9075cfae6aa7efba91b794b
+    - http://mosopen.ru/region/medvedkovo_severnoe
+    - 3
+  - - 37
+    - Медведково Южное
+    - 400
+    - 65
+    - e734eed1459aa847f4df3942c2688cba0e854153
+    - http://mosopen.ru/region/medvedkovo_yuzhnoe
+    - 3
+  - - 38
+    - Останкинский
+    - 1240
+    - 55
+    - d437c7ea0d99780f6110431703c4ea07cf002748
+    - http://mosopen.ru/region/ostankinskij
+    - 3
+  - - 39
+    - Отрадное
+    - 1020
+    - 170
+    - 6615846143f239bce7170082e58ad57c3e903d79
+    - http://mosopen.ru/region/otradnoe
+    - 3
+  - - 40
+    - Ростокино
+    - 440
+    - 29
+    - 6c369aa3ad7008ceb56c98ed790890d992f6781d
+    - http://mosopen.ru/region/rostokino
+    - 3
+  - - 41
+    - Свиблово
+    - 455
+    - 49
+    - 92e1e096fd8b4101c3f07d5d8497def6673224d0
+    - http://mosopen.ru/region/sviblovo
+    - 3
+  - - 42
+    - Северный
+    - 1500
+    - 16
+    - 0069f9b8fff7405158877349fa543dfe0587ef72
+    - http://mosopen.ru/region/severnyj
+    - 3
+  - - 43
+    - Ярославский
+    - 840
+    - 85
+    - bd55a4efc07ddd046e89265608ee8642ea4ea2d2
+    - http://mosopen.ru/region/yaroslavskij
+    - 3
+  - - 44
+    - Богородское
+    - 1105
+    - 76
+    - 9a2c36d6ce8ebb588c9fa11bc89c3993876b45f7
+    - http://mosopen.ru/region/bogorodskoe
+    - 4
+  - - 45
+    - Вешняки
+    - 1072
+    - 102
+    - df34e9302695aff103b1000b1178df74554a83d8
+    - http://mosopen.ru/region/veshnyaki
+    - 4
+  - - 46
+    - Восточный
+    - 4000
+    - 12
+    - 8cc0443ba97dd9cac43e48e5f4dc5b155ccb9441
+    - http://mosopen.ru/region/vostochnyj
+    - 4
+  - - 47
+    - Гольяново
+    - 1178
+    - 159
+    - 0b88af30bcf746ba81f5ea29042ab9a3fdf9f64a
+    - http://mosopen.ru/region/golyanovo
+    - 4
+  - - 48
+    - Ивановское
+    - 1150
+    - 128
+    - 9f5d83011b69bb30c99b094f4f39f5774853d260
+    - http://mosopen.ru/region/ivanovskoe
+    - 4
+  - - 49
+    - Измайлово Восточное
+    - 309
+    - 55
+    - 5c078de5f0beef53966b9fd1bab627c654f75dea
+    - http://mosopen.ru/region/izmajlovo_vostochnoe
+    - 4
+  - - 50
+    - Измайлово
+    - 2425
+    - 108
+    - 9991e3368aa6a3a7087ba38063c0a219cd0f36c6
+    - http://mosopen.ru/region/izmajlovo
+    - 4
+  - - 51
+    - Измайлово Северное
+    - 400
+    - 69
+    - 6d97e32a0c9928563dbb6faff22196eb74bb3ef9
+    - http://mosopen.ru/region/izmajlovo_severnoe
+    - 4
+  - - 52
+    - Косино-Ухтомский
+    - 3020
+    - 33
+    - 89286eab79148b37982d293d4805ffb79cbafaa2
+    - http://mosopen.ru/region/kosino-uhtomskij
+    - 4
+  - - 53
+    - Метрогородок
+    - 540
+    - 33
+    - 589ac2655aeb7e7098092cdf0d7a80f634eb4601
+    - http://mosopen.ru/region/metrogorodok
+    - 4
+  - - 54
+    - Новогиреево
+    - 430
+    - 77
+    - 2f42d432c7ef8eb825492161391123ba19715744
+    - http://mosopen.ru/region/novogireevo
+    - 4
+  - - 55
+    - Новокосино
+    - 340
+    - 76
+    - 978b822fb64db2d400c17b01c32162bc3331d5fe
+    - http://mosopen.ru/region/novokosino
+    - 4
+  - - 56
+    - Перово
+    - 971
+    - 135
+    - 456b058609c2611bf38e564bc3edce0a9aed3aaf
+    - http://mosopen.ru/region/perovo
+    - 4
+  - - 57
+    - Преображенское
+    - 561
+    - 80
+    - fd89230b8775752d0f370ee16589e15ca85b7ce7
+    - http://mosopen.ru/region/preobrazhenskoe
+    - 4
+  - - 58
+    - Соколиная гора
+    - 796
+    - 85
+    - ee13f533874b82fb16dbd9d434ecfc1df7812bc4
+    - http://mosopen.ru/region/sokolinaya_gora
+    - 4
+  - - 59
+    - Сокольники
+    - 1006
+    - 55
+    - 2ad5485d7cc084d8e758d2e71282c59c7ec5fe0a
+    - http://mosopen.ru/region/sokolniki
+    - 4
+  - - 60
+    - Выхино-Жулебино
+    - 1259
+    - 186
+    - 17bdad536e022418092f83a04f5ec568eeb6dfdd
+    - http://mosopen.ru/region/vyhino-zhulebino
+    - 5
+  - - 61
+    - Капотня
+    - 950
+    - 28
+    - 033997b49ff9c8ad4529c8a39be8e786b983b590
+    - http://mosopen.ru/region/kapotnya
+    - 5
+  - - 62
+    - Кузьминки
+    - 760
+    - 123
+    - 2f718bb6decc33052576cd577e5bbb2990767d0b
+    - http://mosopen.ru/region/kuzminki
+    - 5
+  - - 63
+    - Лефортово
+    - 915
+    - 87
+    - 07ce3f4328925ce41a0b32e5ba76e2f060acde92
+    - http://mosopen.ru/region/lefortovo
+    - 5
+  - - 64
+    - Люблино
+    - 1782
+    - 149
+    - 67b8b21ff8ac5961bb03973ac93cbbba826dfc29
+    - http://mosopen.ru/region/lyublino
+    - 5
+  - - 65
+    - Марьино
+    - 1274
+    - 221
+    - e079fd4867d473563b4a5d1cc2590799cf53cd94
+    - http://mosopen.ru/region/marino
+    - 5
+  - - 66
+    - Некрасовка
+    - 495
+    - 8
+    - d34cf975cb9760693f301f02ee159cf7337de2b6
+    - http://mosopen.ru/region/nekrasovka
+    - 5
+  - - 67
+    - Нижегородский
+    - 753
+    - 31
+    - 45f84bd1deae57d08610fb5bc1f87ea489d9aa2a
+    - http://mosopen.ru/region/nizhegorodskij
+    - 5
+  - - 68
+    - Печатники
+    - 2007
+    - 70
+    - ed47a73b0ef56bae3015eca864b9490a4c443340
+    - http://mosopen.ru/region/pechatniki
+    - 5
+  - - 69
+    - Рязанский
+    - 643
+    - 68
+    - e4ee127b7c0e128424bf9a1e439169862a05fcca
+    - http://mosopen.ru/region/ryazanskij
+    - 5
+  - - 70
+    - Текстильщики
+    - 600
+    - 87
+    - 488c7177f2db0e0925e7e0fb4ec3d44290770c1a
+    - http://mosopen.ru/region/tekstilshchiki
+    - 5
+  - - 71
+    - Южнопортовый
+    - 450
+    - 50
+    - e6d7789826d7cc252de3b61548f459ff9473c8b0
+    - http://mosopen.ru/region/yuzhnoportovyj
+    - 5
+  - - 72
+    - Бирюлёво Восточное
+    - 1477
+    - 132
+    - d744e0dc2f1ee51c0ed8e19ebb48ce88f54ee281
+    - http://mosopen.ru/region/biryulevo_vostochnoe
+    - 6
+  - - 73
+    - Бирюлёво Западное
+    - 631
+    - 64
+    - fe611cc46262d3c96776bf773a7e0602115fab74
+    - http://mosopen.ru/region/biryulevo_zapadnoe
+    - 6
+  - - 74
+    - Братеево
+    - 700
+    - 72
+    - ea0eb52949c8ba111585ee94d301dc7fa6f08460
+    - http://mosopen.ru/region/brateevo
+    - 6
+  - - 75
+    - Даниловский
+    - 1065
+    - 80
+    - 048255b9d0fdbd73790a9a523d07ff52ff9ed2f5
+    - http://mosopen.ru/region/danilovskij
+    - 6
+  - - 76
+    - Донской
+    - 590
+    - 45
+    - 207503beb15c149b5209058ee0bc7f255a063e4c
+    - http://mosopen.ru/region/donskoj
+    - 6
+  - - 77
+    - Зябликово
+    - 1888
+    - 103
+    - 9f7359e73da47840309f446507a745ebf54fd897
+    - http://mosopen.ru/region/zyablikovo
+    - 6
+  - - 78
+    - Москворечье-Сабурово
+    - 925
+    - 54
+    - a10adf1acbb1ea6d194e5af5f647522d94e013d1
+    - http://mosopen.ru/region/moskvoreche-saburovo
+    - 6
+  - - 79
+    - Нагатино-Садовники
+    - 830
+    - 69
+    - 9efac765d4090fa501098400901a021a53c1a6e3
+    - http://mosopen.ru/region/nagatino-sadovniki
+    - 6
+  - - 80
+    - Нагатинский затон
+    - 945
+    - 106
+    - de3e4a2482aae112a89309814cf989ee579ea9ab
+    - http://mosopen.ru/region/nagatinskij_zaton
+    - 6
+  - - 81
+    - Нагорный
+    - 539
+    - 56
+    - 43ededd911ee2c08cf3e4b138e9eb1967ed9830b
+    - http://mosopen.ru/region/nagornyj
+    - 6
+  - - 82
+    - Орехово-Борисово Северное
+    - 360
+    - 100
+    - 1d125cd67125a08f50dca4c5b0ade2f03409bf9d
+    - http://mosopen.ru/region/orehovo-borisovo_severnoe
+    - 6
+  - - 83
+    - Орехово-Борисово Южное
+    - 510
+    - 137
+    - 89c82a48d88e958b0b2f1c7283d043ada6b296c3
+    - http://mosopen.ru/region/orehovo-borisovo_yuzhnoe
+    - 6
+  - - 84
+    - Царицыно
+    - 831
+    - 115
+    - 82a1f597a7ad96fe908ed4b1f49cb23aa54b6d9e
+    - http://mosopen.ru/region/caricyno
+    - 6
+  - - 85
+    - Чертаново Северное
+    - 445
+    - 82
+    - e782ee6ae117428d3ff4f3bc80a37b8e8395c2ad
+    - http://mosopen.ru/region/chertanovo_severnoe
+    - 6
+  - - 86
+    - Чертаново Центральное
+    - 650
+    - 85
+    - 4a7f719f06af471dec584d33b21dc5960c5319c4
+    - http://mosopen.ru/region/chertanovo_centralnoe
+    - 6
+  - - 87
+    - Чертаново Южное
+    - 812
+    - 114
+    - 5699127f96b77e2d6fece2754cb8945d04a3a19e
+    - http://mosopen.ru/region/chertanovo_yuzhnoe
+    - 6
+  - - 88
+    - Академический
+    - 557
+    - 82
+    - ad6a0fcf82605bdf16d548a64f978f05fe4599cb
+    - http://mosopen.ru/region/akademicheskij
+    - 7
+  - - 89
+    - Бутово Северное
+    - 927
+    - 62
+    - 6a117ee152a57541cb3176b2934e0cfd90982628
+    - http://mosopen.ru/region/butovo_severnoe
+    - 7
+  - - 90
+    - Бутово Южное
+    - 2600
+    - 144
+    - 0b15025076aa0559fde6f4732817816c7caeeaf6
+    - http://mosopen.ru/region/butovo_yuzhnoe
+    - 7
+  - - 91
+    - Гагаринский
+    - 549
+    - 60
+    - 432744988d7271c264025eebc42ab2f4aaf19435
+    - http://mosopen.ru/region/gagarinskij
+    - 7
+  - - 92
+    - Зюзино
+    - 534
+    - 100
+    - 861013ff9d61e5dab80d078eea9973d0cebf2b6b
+    - http://mosopen.ru/region/zyuzino
+    - 7
+  - - 93
+    - Коньково
+    - 471
+    - 126
+    - cf7abeaa9be27bc4a7984a31c3bfe0b4f5db9f00
+    - http://mosopen.ru/region/konkovo
+    - 7
+  - - 94
+    - Котловка
+    - 267
+    - 60
+    - 4264a44f4cf561e940de8fe0bd82332a5625e87f
+    - http://mosopen.ru/region/kotlovka
+    - 7
+  - - 95
+    - Ломоносовский
+    - 300
+    - 68
+    - 6411dfe0bc7ff44c23a6327714466a461dfffc65
+    - http://mosopen.ru/region/lomonosovskij
+    - 7
+  - - 96
+    - Обручевский
+    - 604
+    - 70
+    - 1e4ff7c562f2a713ab47a0d7b9b8f206847a4276
+    - http://mosopen.ru/region/obruchevskij
+    - 7
+  - - 97
+    - Тёплый Стан
+    - 750
+    - 113
+    - 78b164a2d41c333d54b2df0f547e3e064eb2fe96
+    - http://mosopen.ru/region/teplyj_stan
+    - 7
+  - - 98
+    - Черёмушки
+    - 463
+    - 89
+    - 6914ccbc85baef96d429754a613b7955d4ab6d9c
+    - http://mosopen.ru/region/cheremushki
+    - 7
+  - - 99
+    - Ясенево
+    - 2536
+    - 172
+    - 6b904711bae8eebde36d5fd8853a46276c881007
+    - http://mosopen.ru/region/yasenevo
+    - 7
+  - - 100
+    - Внуково
+    - 1691
+    - 20
+    - 89580cad1ed2279c26359daa3ab71f73bf84a251
+    - http://mosopen.ru/region/vnukovo
+    - 8
+  - - 101
+    - Дорогомилово
+    - 793
+    - 63
+    - d1d9f2fcae903fea2d9ade7632f1ddc3f4dd112e
+    - http://mosopen.ru/region/dorogomilovo
+    - 8
+  - - 102
+    - Крылатское
+    - 1110
+    - 62
+    - f7777f9cba45f9dfe69bed84ab55674af3083ff7
+    - http://mosopen.ru/region/krylatskoe
+    - 8
+  - - 103
+    - Кунцево
+    - 1610
+    - 125
+    - 24ae1c58d92a8654de3abe50111a4215d2753efa
+    - http://mosopen.ru/region/kuncevo
+    - 8
+  - - 104
+    - Можайский
+    - 1085
+    - 110
+    - 1d8316c246229e5e6eb4671e7e818ba02ee54615
+    - http://mosopen.ru/region/mozhajskij
+    - 8
+  - - 105
+    - Ново-Переделкино
+    - 855
+    - 92
+    - a93b9546793b9d056601fd7e4385b9dc0f479f71
+    - http://mosopen.ru/region/novo-peredelkino
+    - 8
+  - - 106
+    - Очаково-Матвеевское
+    - 1759
+    - 91
+    - 3e06f42588d5aeab7c3aa110f91f00150bf8f8c0
+    - http://mosopen.ru/region/ochakovo-matveevskoe
+    - 8
+  - - 107
+    - Проспект Вернадского
+    - 462
+    - 55
+    - 104e27e04ba48ed1efabbde22f9c272fa012fdd7
+    - http://mosopen.ru/region/prospekt_vernadskogo
+    - 8
+  - - 108
+    - Раменки
+    - 1876
+    - 102
+    - 0360e7bd675d149a65b479f39570d18d2f3c1802
+    - http://mosopen.ru/region/ramenki
+    - 8
+  - - 109
+    - Солнцево
+    - 1125
+    - 88
+    - de35e3e8da7c87a65268fe60842b9d6a1e842e7d
+    - http://mosopen.ru/region/solncevo
+    - 8
+  - - 110
+    - Тропарёво-Никулино
+    - 1023
+    - 98
+    - 4d7e04d6880ff6517e459862113ac2b66794d277
+    - http://mosopen.ru/region/troparevo-nikulino
+    - 8
+  - - 111
+    - Филёвский парк
+    - 784
+    - 59
+    - e3601f78a97ff65a3b098e6def0fd066a893f6f6
+    - http://mosopen.ru/region/filevskij_park
+    - 8
+  - - 112
+    - Фили-Давыдково
+    - 850
+    - 84
+    - a39de4e96459d83db14d1c7121c8194386b9b90d
+    - http://mosopen.ru/region/fili-davydkovo
+    - 8
+  - - 113
+    - Куркино
+    - 790
+    - 21
+    - 4c5ac49ea8eaa08b9f37519e7575e7692842cc85
+    - http://mosopen.ru/region/kurkino
+    - 9
+  - - 114
+    - Митино
+    - 1258
+    - 130
+    - 885b13eb6eb40434e001943fd171bbda2d809e13
+    - http://mosopen.ru/region/mitino
+    - 9
+  - - 115
+    - Покровское-Стрешнево
+    - 350
+    - 48
+    - 4e2e4f25edb8b8b0affe167aab8fe82d8d69963a
+    - http://mosopen.ru/region/pokrovskoe-streshnevo
+    - 9
+  - - 116
+    - Строгино
+    - 1670
+    - 119
+    - 877ef3b6b470855945bd576a1e349523320d3d75
+    - http://mosopen.ru/region/strogino
+    - 9
+  - - 117
+    - Тушино Северное
+    - 580
+    - 119
+    - 5bacd7f979c928aa5ee6333d3519eb5dfc6815ee
+    - http://mosopen.ru/region/tushino_severnoe
+    - 9
+  - - 118
+    - Тушино Южное
+    - 1170
+    - 79
+    - b013abd82d12e70d39255b136912ac1886baf1db
+    - http://mosopen.ru/region/tushino_yuzhnoe
+    - 9
+  - - 119
+    - Хорошёво-Мневники
+    - 1500
+    - 120
+    - fe5392e52286db760fc15ea59f241ab49cc7cc1c
+    - http://mosopen.ru/region/horoshevo-mnevniki
+    - 9
+  - - 120
+    - Щукино
+    - 900
+    - 90
+    - 33fc67fbed27dd0067d3446bf3016d2acf5c4668
+    - http://mosopen.ru/region/shchukino
+    - 9
 
 ---
 routes:

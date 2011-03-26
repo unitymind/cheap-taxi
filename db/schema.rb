@@ -10,11 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110325231435) do
+ActiveRecord::Schema.define(:version => 20110326023520) do
 
-  create_table "car_types", :force => true do |t|
+  create_table "car_groups", :force => true do |t|
     t.string "name"
   end
+
+  create_table "car_types", :force => true do |t|
+    t.string  "name"
+    t.integer "car_group_id"
+  end
+
+  add_index "car_types", ["car_group_id"], :name => "index_car_types_on_car_group_id"
+  add_index "car_types", ["name"], :name => "index_car_types_on_name", :unique => true
 
   create_table "car_types_companies", :id => false, :force => true do |t|
     t.integer "company_id"
