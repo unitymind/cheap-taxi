@@ -33,6 +33,8 @@ group :development, :test do
   gem 'railroady'
   gem 'colored'
   gem 'rspec-rails-matchers', :git => 'git://github.com/unitymind/rspec-rails-matchers.git'
+  gem 'watchr'
+  gem 'spork', '~> 0.9.0.rc'
 #  gem 'rspec-rails-matchers', :path => '~/developing/projects/gems/rspec-rails-matchers'
 #  gem 'metric_fu'
 end

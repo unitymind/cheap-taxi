@@ -1,7 +1,10 @@
 require 'spec_helper'
 
-describe CarGroup do
-  subject { CarGroup.new }
+module CheapTaxi::Models
+  describe CarGroup do
+    subject { CarGroup.new }
 
-  it { have_many(:car_types) }
+    it { should have_many(:car_types) }
+    it { should have_many(:rates) }
+  end
 end

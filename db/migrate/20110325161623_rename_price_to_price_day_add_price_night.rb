@@ -5,7 +5,7 @@ class RenamePriceToPriceDayAddPriceNight < ActiveRecord::Migration
   end
 
   def self.down
+    rename_column :rates, :price_day, :price
     remove_column :rates, :price_night
-    rename_column :rates, :price_day, :price_night
   end
 end

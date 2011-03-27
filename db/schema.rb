@@ -10,10 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326224631) do
+ActiveRecord::Schema.define(:version => 20110327143416) do
 
   create_table "car_groups", :force => true do |t|
     t.string "name"
+    t.string "tag"
   end
 
   create_table "car_types", :force => true do |t|
@@ -71,13 +72,15 @@ ActiveRecord::Schema.define(:version => 20110326224631) do
   add_index "metro_stations_regions", ["region_id", "metro_station_id"], :name => "index_metro_stations_regions_on_region_id_and_metro_station_id"
 
   create_table "rates", :force => true do |t|
-    t.integer "car_type_id"
+    t.integer "car_group_id"
     t.integer "company_id"
-    t.integer "route_id"
-    t.integer "travel_time"
     t.integer "pick_up_time"
     t.float   "price_day"
     t.float   "price_night"
+    t.float   "min_price_day"
+    t.integer "min_price_day_distance"
+    t.float   "min_price_night"
+    t.integer "min_price_night_distance"
   end
 
   create_table "region_links", :force => true do |t|

@@ -103,9 +103,9 @@ namespace :db do
         puts "\n" + "** ".bold +  "Парсим Taxodrom.ru...\n".green.bold
 
         CAR_GROUPS = {
-          :e_class => CarGroup.find_or_create_by_name('Эконом-класс'),
-          :b_class => CarGroup.find_or_create_by_name('Бизнес-класс'),
-          :v_class => CarGroup.find_or_create_by_name('VIP-класс')
+          :e_class => CarGroup.find_or_create_by_name_and_tag('Эконом-класс', 'e_class'),
+          :b_class => CarGroup.find_or_create_by_name_and_tag('Бизнес-класс', 'b_class'),
+          :v_class => CarGroup.find_or_create_by_name_and_tag('VIP-класс', 'v_class')
         }
 
         has_new = false
@@ -116,7 +116,8 @@ namespace :db do
             company = CheapTaxi::Utils::Parser.instance.parse_company_profile(url)
             if !company.empty? && !Company.where(:source_id => id).exists? && company[:phones] != '' && !company[:url].nil?
 
-              new_company = Company.create(:name => company[:name], :phones => company[:phones], :source_id => id)
+              new_company = Company.create(:name => company[:name], :phones => company[:phones],
+                                           :site_url => company[:url], :source_id => id)
 
               CAR_GROUPS.each do |group_key, group_class|
                 if company[:car_types].keys.include? group_key

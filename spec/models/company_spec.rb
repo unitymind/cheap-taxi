@@ -6,5 +6,6 @@ module CheapTaxi::Models
 
     it { should have_and_belong_to_many(:regions) }
     it { should have_and_belong_to_many(:car_types) }
+    it { should have_many(:rates) }
   end
 end

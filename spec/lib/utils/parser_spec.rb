@@ -115,10 +115,10 @@ describe CheapTaxi::Utils::Parser.to_s.cyan do
       subject[:nearest_regions].each { |value| value.should match Parser::REGION_URL_MATCH }
 
       subject[:area].should be_kind_of(Integer)
-      (subject[:area] > 0).should be_true
+      subject[:area].should be > 0
 
       subject[:population].should be_kind_of(Integer)
-      (subject[:population] > 0).should be_true
+      subject[:population].should be > 0
     end
   end
 end
