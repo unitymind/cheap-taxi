@@ -2,7 +2,7 @@
 require "spec_helper"
 require "utils"
 
-describe CheapTaxi::Utils::Parser do
+describe CheapTaxi::Utils::Parser.to_s.cyan do
   include CheapTaxi::Utils
 
   it "should be singleton" do
@@ -10,16 +10,21 @@ describe CheapTaxi::Utils::Parser do
     Parser.instance.should be(Parser.instance)
   end
   
-  describe "#parse_company_profile_urls" do
-    let(:urls) { Parser.instance.parse_company_profile_urls }
+  describe "#" + "grab_company_profile_urls".blue.bold do
+    let(:urls) { Parser.instance.grab_company_profile_urls }
 
-    it "should be array of urls linked to companies profiles" do
-      urls.should_not == []
-      urls.each { |u| u.should match Parser::PROFILE_REG_MATCH }
+    it "should be correct and expected" do
+      urls.should be_kind_of(Array)
+      urls.should_not be_empty
+      urls.each do |u|
+        u.should be_a_kind_of(String)
+        u.should_not be_empty
+        u.should match Parser::COMPANY_PROFILE_URL_REG_MATCH
+      end
     end
   end
 
-  describe "#parse_company_profile via http://www.taxodrom.ru/" do
+  describe "#" +"parse_company_profile".blue.bold do
     let(:company_a) { Parser.instance.parse_company_profile('http://www.taxodrom.ru/taxi-moscow/155') }
     let(:company_b) { Parser.instance.parse_company_profile('http://www.taxodrom.ru/taxi-moscow/546') }
     let(:company_c) { Parser.instance.parse_company_profile('http://www.taxodrom.ru/taxi-moscow/297') }
@@ -28,36 +33,30 @@ describe CheapTaxi::Utils::Parser do
     let(:company_not_taxodrom) { Parser.instance.parse_company_profile('http://ya.ru') }
     let(:company_not_profile) { Parser.instance.parse_company_profile('http://www.taxodrom.ru/taxi-moscow/') }
 
-    it ":name should be expected" do
-      company_a[:name].should == 'Такси 788'
-      company_b[:name].should == 'Элит Такси'
-      company_c[:name].should == 'Такси-МАКСИ'
-      company_d[:name].should == 'Городское такси'
-    end
+    it "should be correct and expected" do
+      company_a[:name].should eq 'Такси 788'
+      company_b[:name].should eq 'Элит Такси'
+      company_c[:name].should eq 'Такси-МАКСИ'
+      company_d[:name].should eq 'Городское такси'
 
-    it ":phones should be expected" do
-      company_a[:phones].should == '(495) 788-788-0'
-      company_b[:phones].should == '(495) 768-68-13'
-      company_c[:phones].should == "(495) 665-05-45\n(903) 550-40-50"
-      company_d[:phones].should == ''
-    end
+      company_a[:phones].should eq '(495) 788-788-0'
+      company_b[:phones].should eq '(495) 768-68-13'
+      company_c[:phones].should eq "(495) 665-05-45\n(903) 550-40-50"
+      company_d[:phones].should be_empty
 
-    it ":url should be expected" do
-      company_a[:url].should == 'http://www.7887880.ru'
-      company_b[:url].should == 'http://www.elitataxi.ru'
-      company_c[:url].should == 'http://www.taxi-maxi.ru'
+      company_a[:url].should eq 'http://www.7887880.ru'
+      company_b[:url].should eq 'http://www.elitataxi.ru'
+      company_c[:url].should eq 'http://www.taxi-maxi.ru'
       company_d[:url].should be_nil
-    end
 
-    it ":car_types should be expected" do
-      company_a[:car_types].keys.sort.should == [:e_class, :b_class].sort
-      company_b[:car_types].keys.sort.should == [:b_class, :v_class].sort
-      company_c[:car_types].keys.sort.should == [:e_class, :b_class, :v_class].sort
-      company_d[:car_types].should == {}
+      company_a[:car_types].keys.sort.should eq [:e_class, :b_class].sort
+      company_b[:car_types].keys.sort.should eq [:b_class, :v_class].sort
+      company_c[:car_types].keys.sort.should eq [:e_class, :b_class, :v_class].sort
+      company_d[:car_types].should be_empty
     end
 
     it "should be empty if got 404 page" do
-      company_not_found.should == {}
+      company_not_found.should be_empty
     end
 
     it "should be raise ArgumentError for non taxodrom.ru company's profile url" do
@@ -66,5 +65,60 @@ describe CheapTaxi::Utils::Parser do
     end
   end
 
-end
+  describe "#" + "parse_districts".blue.bold do
+    subject { Parser.instance.parse_districts }
 
+    it "should be correct and expected" do
+      should be_a_kind_of(Hash)
+      should_not be_empty
+
+      subject.keys.each do |key|
+        key.should match Parser::DISTRICT_URL_REG_MATCH
+        key.should_not match /zelao$/
+      end
+
+      subject.values.each do |value|
+        value.should be_a_kind_of(Hash)
+
+        value.should be_has_key(:name)
+        value[:name].should be_a_kind_of(String)
+        value[:name].should_not be_empty
+
+        value.should be_has_key(:regions)
+        value[:regions].should be_a_kind_of(Hash)
+        value[:regions].should_not be_empty
+        value[:regions].each do |region_url, region_name|
+          region_url.should match Parser::REGION_URL_MATCH
+          region_name.should be_a_kind_of(String)
+          region_name.should_not be_empty
+        end
+      end
+    end
+  end
+
+  describe "#" + "parse_region".blue.bold do
+    subject { Parser.instance.parse_region('http://mosopen.ru/region/arbat') }
+
+    it "should be correct and expected" do
+     should be_a_kind_of(Hash)
+     should_not be_empty
+
+      subject[:metro_stations].should be_kind_of(Hash)
+      subject[:metro_stations].each do |key, value|
+        key.should match Parser::METRO_URL_REG_MATCH
+        value.should be_a_kind_of(String)
+        value.should_not be_empty
+      end
+
+      subject[:nearest_regions].should be_kind_of(Array)
+      subject[:nearest_regions].should_not be_empty
+      subject[:nearest_regions].each { |value| value.should match Parser::REGION_URL_MATCH }
+
+      subject[:area].should be_kind_of(Integer)
+      (subject[:area] > 0).should be_true
+
+      subject[:population].should be_kind_of(Integer)
+      (subject[:population] > 0).should be_true
+    end
+  end
+end

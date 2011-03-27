@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326023520) do
+ActiveRecord::Schema.define(:version => 20110326224631) do
 
   create_table "car_groups", :force => true do |t|
     t.string "name"
@@ -49,13 +49,14 @@ ActiveRecord::Schema.define(:version => 20110326023520) do
 
   create_table "districts", :force => true do |t|
     t.string "name"
+    t.string "sha1_hash"
   end
 
   add_index "districts", ["name"], :name => "index_districts_on_name", :unique => true
+  add_index "districts", ["sha1_hash"], :name => "index_districts_on_sha1_hash"
 
   create_table "metro_stations", :force => true do |t|
     t.string "name"
-    t.string "url"
     t.string "sha1_hash"
   end
 
@@ -70,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20110326023520) do
   add_index "metro_stations_regions", ["region_id", "metro_station_id"], :name => "index_metro_stations_regions_on_region_id_and_metro_station_id"
 
   create_table "rates", :force => true do |t|
+    t.integer "car_type_id"
     t.integer "company_id"
     t.integer "route_id"
     t.integer "travel_time"
@@ -92,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20110326023520) do
     t.string  "sha1_hash"
     t.string  "url"
     t.integer "district_id"
+    t.boolean "parsed",      :default => false
   end
 
   add_index "regions", ["district_id"], :name => "index_regions_on_district_id"
