@@ -1,0 +1,59 @@
+= form_tag '/search/find', :remote => true do |f|
+  %table.search
+    %tr
+      %td{:colspan => 3}
+        %h2 Откуда?
+      %td.right
+        %h2 Какой автомобиль?
+    %tr
+      %td Административный округ &nbsp;или
+      %td станция метро:
+      %td Уточните район:
+      %td.right{:rowspan => 2}
+        -#= autocomplete_field_tag(:car_type, nil, "/search/autocomplete_car_type_name", :id_element => "#car_type_id", :filter_by => "#car_group_id")
+        -#= hidden_field_tag(:car_type_id)
+        %br
+        = collection_select(:car_group, :id, CarGroup.all, 'id', 'name')
+        = check_box_tag(:foreign, 1, true)
+        = label_tag(:foreign_car_label, "Иномарка")
+    %tr
+      %td
+        = autocomplete_field_tag(:from_district, nil, "/search/autocomplete_district_name", :id_element => "#from_district_id", :scope_to => "#from_region", :scope => "by_district")
+        = hidden_field_tag(:from_district_id)
+      %td
+        = autocomplete_field_tag(:from_metro, nil, "/search/autocomplete_metro_station_name", :id_element => "#from_metro_id", :filter_by => "#from_district_id", :scope_to => "#from_region", :scope => "by_metro_station")
+        = hidden_field_tag(:from_metro_id)
+      %td
+        = autocomplete_field_tag(:from_region, nil, "/search/autocomplete_region_name", :id_element => "#from_region_id", :filter_by => '', :scope => '')
+        = hidden_field_tag(:from_region_id)
+    %tr
+      %td{:colspan => 3}
+        %h2 Куда?
+      %td.right
+        %h2 Когда?
+    %tr
+      %td Административный округ &nbsp;или
+      %td станция метро:
+      %td Уточните район:
+      %td.right{:rowspan => 2}
+        = radio_button_tag(:trip_when, "today", true)
+        = label_tag(:trip_when_today, "сегодня")
+        = radio_button_tag(:trip_when, "tomorrow")
+        = label_tag(:trip_when_today, "завтра")
+        %br
+        = select_hour(Time.now)
+        = select_minute(Time.now)
+        = submit_tag("Поехали!")
+    %tr
+      %td
+        = autocomplete_field_tag(:to_district, nil, "/search/autocomplete_district_name", :id_element => "#to_district_id", :scope_to => "#to_region", :scope => "by_district")
+        = hidden_field_tag(:to_district_id)
+      %td
+        = autocomplete_field_tag(:to_metro, nil, "/search/autocomplete_metro_station_name", :id_element => "#to_metro_id", :filter_by => "#to_district_id", :scope_to => "#to_region", :scope => "by_metro_station")
+        = hidden_field_tag(:to_metro_id)
+      %td
+        = autocomplete_field_tag(:to_region, nil, "/search/autocomplete_region_name", :id_element => "#to_region_id", :filter_by => '', :scope => '')
+        = hidden_field_tag(:to_region_id)
+    %tr
+      %td{:colspan => 4 }
+        %div#datatable

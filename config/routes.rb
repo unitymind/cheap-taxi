@@ -1,4 +1,14 @@
 CheapTaxi::Application.routes.draw do
+  get "search/index"
+  get "search/autocomplete_district_name"
+  get "search/autocomplete_metro_station_name"
+  get "search/autocomplete_region_name"
+  get "search/autocomplete_car_type_name"
+
+  post "search/find"
+
+  root :to => "search#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

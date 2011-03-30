@@ -10,4 +10,7 @@ class Region < ActiveRecord::Base
   has_many :from_regions, :through => :from_regions_links
 
   validates_uniqueness_of :name
+
+  scope :by_district, lambda { |district_id| where(:district_id => district_id) }
+  scope :by_metro_station, lambda { |metro_station_id| joins(:metro_stations).where('metro_stations.id = ?', metro_station_id)}
 end
