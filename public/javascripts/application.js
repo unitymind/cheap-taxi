@@ -15,16 +15,21 @@ $(document).ready(function() {
 					"sLast":     ">>"
 				}
         },
+        "bInfo": false,
+        "bJQueryUI": true,
+        "bAutoWidth": false,
+        "sScrollY": "400px",
+        "bPaginate": false,
         "sPaginationType": "full_numbers",
 		"aoColumns": [
-			{ "sTitle": "Компания", "sClass": "center" },
-			{ "sTitle": "Сайт", "sClass": "center",
+			{ "sTitle": "Компания" },
+			{ "sTitle": "Сайт",
                 "fnRender": function(obj) {
                     var sReturn = obj.aData[ obj.iDataColumn ];
                     return "<a href=\"" + sReturn + "\" target=\"_blank\">" + sReturn + "</a>";
                 }
             },
-			{ "sTitle": "Телефон", "sClass": "center" },
+			{ "sTitle": "Телефон", "sWidth" : '300' },
 			{ "sTitle": "Время<br/> подачи", "sClass": "center" },
             { "sTitle": "Стоимость<br/> поездки", "sClass": "center" }
 		]

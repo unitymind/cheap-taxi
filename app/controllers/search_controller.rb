@@ -17,20 +17,23 @@ class SearchController < ApplicationController
         includes(:rates).where('rates.car_group_id = ?', params[:car_group][:id]).each do |company|
           rate = company.rates[0]
           @result.push([company.name, company.site_url, company.phones, rate.pick_up_time, calculate_cost(route, rate, postfix)])
+          @from_region = Region.where(:id => params[:from_region_id]).first
+          @to_region = Region.where(:id => params[:to_region_id]).first
+          @distance = route.distance
       end
     else
-      render :nothing =>  true and return
+      render :nothing =>  true
     end
   end
 
   private
-  def calculate_cost(route, rate, postfix)
-    cost = rate.send("min_price_#{postfix}".to_sym)
-    pay_for = route.distance - rate.send("min_price_#{postfix}_distance".to_sym)
-    if pay_for > 0
-      cost += pay_for * rate.send("price_#{postfix}".to_sym)
+    def calculate_cost(route, rate, postfix)
+      cost = rate.send("min_price_#{postfix}".to_sym)
+      pay_for = route.distance - rate.send("min_price_#{postfix}_distance".to_sym)
+      if pay_for > 0
+        cost += pay_for * rate.send("price_#{postfix}".to_sym)
+      end
+      cost.to_i
     end
-    cost.to_i
-  end
 
 end

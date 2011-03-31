@@ -20,7 +20,7 @@ namespace :db do
           unless Route.where(:from_region_id => route[:from], :to_region_id => route[:to]).exists?
             Route.create(:from_region_id => route[:from], :to_region_id => route[:to],
                          :path => route[:path].join(','), :routes_count => (route[:path].size-1),
-                         :distance => (route[:distance] * 0.01).round(2).to_f)
+                         :distance => (route[:distance] * 0.01 * 0.5).round(2).to_f)
             created += 1
           end
         end

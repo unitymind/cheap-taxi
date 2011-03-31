@@ -1,4 +1,9 @@
 //$('#result').dataTable.fnUpdate()
 //$('#datatable').show();
+$('#table-header').html('<%= raw "<h2>#{@from_region.name} - #{@to_region.name}: #{@distance} км.</h2>"%>');
+$('#from_region').val('<%= @from_region.name %>');
+$('#from_region_id').val('<%= @from_region.id %>');
+$('#to_region').val('<%= @to_region.name %>');
+$('#to_region_id').val('<%= @to_region.id %>');
 oTable.fnClearTable();
 oTable.fnAddData(<%= raw @result.to_json %>);
