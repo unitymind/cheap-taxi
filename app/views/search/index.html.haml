@@ -8,7 +8,7 @@
     %tr
       %td Административный округ &nbsp;или
       %td станция метро:
-      %td Уточните район:
+      %td Уточните район*:
       %td.right{:rowspan => 2}
         -#= autocomplete_field_tag(:car_type, nil, "/search/autocomplete_car_type_name", :id_element => "#car_type_id", :filter_by => "#car_group_id")
         -#= hidden_field_tag(:car_type_id)
@@ -34,7 +34,7 @@
     %tr
       %td Административный округ &nbsp;или
       %td станция метро:
-      %td Уточните район:
+      %td Уточните район*:
       %td.right{:rowspan => 2}
         = radio_button_tag(:trip_when, "today", true)
         = label_tag(:trip_when_today, "сегодня")

@@ -111,6 +111,41 @@
 
 ## Немного технических деталей
 
+Парсер и генерация данных сгруппированы в rake-задачах:
+
+> rake db:parser:moscow:all
+>    Parse Moscow's districts, area, metro's stations and areas relations. Parse Moscow's taxi companies
+
+> rake db:parser:moscow:city
+>    Parse Moscow's districts, area, metro's stations and areas relations.
+
+> rake db:parser:moscow:companies
+>    Parse Moscow's taxi companies
+
+> rake db:populate:all
+>    Populate and generate (randomly) needed data
+
+> rake db:populate:companies_to_regions
+>    Random bind companies to regions. Can be re-run many times
+
+> rake db:populate:rates
+>    Generate random rates for companies. For different car_group - different rates
+
+> rake db:populate:routes
+>    Create graph from RegionLinks and Regions. Find shortest path from one region to another and save them to database
+
+Чтобы наполнить базу с чистого листа:
+
+> rake db:init
+>    Init database from a scratch. Parse and populate data.
+
+Можно же наполнить данными без парсинга:
+
+> rake db:schema:load
+>    Load a schema.rb file into the database
+
+> rake db:data:load
+>    Load contents of db/data.extension (defaults to yaml) into database
 
 ## Что дальше?
 
