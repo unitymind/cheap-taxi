@@ -4,7 +4,7 @@
 
 ## Постановка задачи
 
-Функциональные и иные требования в формате PDF доступны [здесь](https://github.com/unitymind/cheap-taxi/blob/master/doc/aviasales.pdf?raw=true)
+Функциональные и иные требования в формате PDF доступны [здесь](https://github.com/unitymind/cheap-taxi/blob/master/doc/aviasales.pdf?raw=true).
 
 ## Сбор данных и их структура
 
@@ -142,12 +142,12 @@
 	rake db:populate:routes
 		Create graph from RegionLinks and Regions. Find shortest path from one region to another and save them to database
 
-Чтобы наполнить базу с чистого листа:
+Чтобы наполнить базу с чистого листа (парсим внешние ресурсы, генерируем данные):
 
 	rake db:init
 		Init database from a scratch. Parse and populate data.
 
-Можно же наполнить данными без парсинга:
+Можно также наполнить данными, воспользовавшись дампом:
 
 	rake db:schema:load
 		Load a schema.rb file into the database

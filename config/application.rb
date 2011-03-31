@@ -31,7 +31,7 @@ module CheapTaxi
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w(jquery.min jquery-ui-1.8.11.custom.min rails autocomplete-rails jquery.dataTables)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery.min jquery-ui-1.8.11.custom.min rails autocomplete-rails jquery.dataTables.min)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
