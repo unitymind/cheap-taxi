@@ -148,7 +148,7 @@
 	rake db:data:load
 		Load contents of db/data.extension (defaults to yaml) into database
 
-На Heroku приложение задеплоилось, но не заработало корректно. Разбираться не стал, воспользовался [locum.ru](http://locum.ru] - [все в порядке](http://cheap-taxi.unitymind.org/)! ;)
+На Heroku приложение задеплоилось, но не заработало корректно. Разбираться не стал, воспользовался [locum.ru](http://locum.ru) - [все в порядке](http://cheap-taxi.unitymind.org/)! ;)
 
 ## Что дальше?
 
