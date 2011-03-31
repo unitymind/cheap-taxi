@@ -22,8 +22,8 @@ $(document).ready(function() {
         "bPaginate": false,
         "sPaginationType": "full_numbers",
 		"aoColumns": [
-			{ "sTitle": "Компания" },
-			{ "sTitle": "Сайт",
+			{ "sTitle": "Компания", "sWidth" : '200' },
+			{ "sTitle": "Сайт", "sWidth" : '220',
                 "fnRender": function(obj) {
                     var sReturn = obj.aData[ obj.iDataColumn ];
                     return "<a href=\"" + sReturn + "\" target=\"_blank\">" + sReturn + "</a>";

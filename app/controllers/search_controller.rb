@@ -4,9 +4,6 @@ class SearchController < ApplicationController
   autocomplete :region, :name, :limit => 200
   autocomplete :car_type, :name, :filter_by => :by_car_group, :full => true, :limit => 200
 
-  def index
-  end
-
   def find
     postfix = (8..22).include?(params[:date]['hour'].to_i) ? 'day' : 'night'
     route = Route.where(:from_region_id => params[:from_region_id], :to_region_id => params[:to_region_id]).first
