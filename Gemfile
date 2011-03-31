@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'rails3-jquery-autocomplete', :git => 'git://github.com/unitymind/rails3-jquery-autocomplete.git'
 gem 'simple_form'
 gem 'colored'
+gem 'yaml_db'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -32,9 +33,7 @@ gem 'nokogiri'
 group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
-  gem 'yaml_db'
   gem 'railroady'
-  gem 'colored'
   gem 'rspec-rails-matchers', :git => 'git://github.com/unitymind/rspec-rails-matchers.git'
   gem 'watchr'
   gem 'spork', '~> 0.9.0.rc'
