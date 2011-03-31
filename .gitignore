@@ -1,6 +1,5 @@
 .bundle
 .idea
 db/*.sqlite3
-db/data.yml
 log/*.log
 tmp/
