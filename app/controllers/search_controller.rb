@@ -8,7 +8,7 @@ class SearchController < ApplicationController
   end
 
   def find
-    postfix = (8..22).include?(params[:date['hour']].to_i) ? 'day' : 'night'
+    postfix = (8..22).include?(params[:date]['hour'].to_i) ? 'day' : 'night'
     route = Route.where(:from_region_id => params[:from_region_id], :to_region_id => params[:to_region_id]).first
 
     if route
