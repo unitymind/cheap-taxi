@@ -39,7 +39,7 @@ group :development, :test do
   gem 'watchr'
   gem 'spork', '~> 0.9.0.rc'
   gem 'nifty-generators'
-  gem 'ruby-debug19'
+#  gem 'ruby-debug19'
 #  gem 'rspec-rails-matchers', :path => '~/developing/projects/gems/rspec-rails-matchers'
 #  gem 'metric_fu'
 end
