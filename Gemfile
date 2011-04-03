@@ -13,6 +13,7 @@ gem 'rails3-jquery-autocomplete', :git => 'git://github.com/unitymind/rails3-jqu
 gem 'simple_form'
 gem 'colored'
 gem 'yaml_db'
+gem 'yajl-ruby'
 
 # Deploy with Capistrano
 # gem 'capistrano'
