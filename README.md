@@ -1,7 +1,5 @@
 # Прототип системы вертикального поиска по услугам такси города Москвы
 
-[http://cheap-taxi.unitymind.org/](http://cheap-taxi.unitymind.org/) - запущенное приложение, соответствующее текущей версии.
-
 ## Постановка задачи
 
 Функциональные и иные требования в формате PDF доступны [здесь](https://github.com/unitymind/cheap-taxi/blob/master/doc/aviasales.pdf?raw=true).
